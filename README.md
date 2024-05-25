@@ -14,5 +14,5 @@ y_{n,m} | Z_{m,k}=1 \sim \text{Bernoulli}(\pi_{n, k})  \text{ with } \pi_{n, k} 
 - $Z_{m,k}$ indicates if mutation m belongs to cluster k;
 - $\pi_{n, k}$ indicates the probability that mutation m exists in the n-th genome sequence, given that we know the clinical features of individual n and the mutation m belongs to
 cluster k;
-- $\mathbf{x}_{n}$ is a (D+1) \times 1$ vector representing the intercept and covariates associated with n-th patient;
+- $\mathbf{x}_{n}$ is a $(D+1) \times 1$ vector representing the intercept and covariates associated with n-th patient;
 - $\boldsymbol{\beta}_k$ is a $(D+1) \times 1$ vector storing the logistic regression intercept and coefficients associated with mutations in cluster $k$.
