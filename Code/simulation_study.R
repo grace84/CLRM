@@ -100,24 +100,24 @@ for(k in 1:K){
 close(file_conn)
 
 # Save simulated data
-saveRDS(X, "../Data/Simulation Data/X.RData")
-saveRDS(Y, "../Data/Simulation Data/Y.RData")
-saveRDS(Z, "../Data/Simulation Data/Z.RData")
-saveRDS(beta, "../Data/Simulation Data/beta.RData")
-saveRDS(lambda, "../Data/Simulation Data/lambda.RData")
-saveRDS(pi, "../Data/Simulation Data/pi.RData")
+saveRDS(X, "../Datasets/Simulation Data/X.RData")
+saveRDS(Y, "../Datasets/Simulation Data/Y.RData")
+saveRDS(Z, "../Datasets/Simulation Data/Z.RData")
+saveRDS(beta, "../Datasets/Simulation Data/beta.RData")
+saveRDS(lambda, "../Datasets/Simulation Data/lambda.RData")
+saveRDS(pi, "../Datasets/Simulation Data/pi.RData")
 
 
 
 ########################### Recall simulated data ########################
 
 # Read in simulated data
-TrueX <- readRDS("../Data/Simulation Data/X.RData")            # N x (D+1)
-TrueY <- readRDS("../Data/Simulation Data/Y.RData")            # N x M
-TrueZ <- readRDS("../Data/Simulation Data/Z.RData")            # M x K
-TrueBeta <- readRDS("../Data/Simulation Data/beta.RData")      # K x (D+1)
-TrueLambda <- readRDS("../Data/Simulation Data/lambda.RData")  # M x K
-TruePi <- readRDS("../Data/Simulation Data/pi.RData")          # N x K
+TrueX <- readRDS("../Datasets/Simulation Data/X.RData")            # N x (D+1)
+TrueY <- readRDS("../Datasets/Simulation Data/Y.RData")            # N x M
+TrueZ <- readRDS("../Datasets/Simulation Data/Z.RData")            # M x K
+TrueBeta <- readRDS("../Datasets/Simulation Data/beta.RData")      # K x (D+1)
+TrueLambda <- readRDS("../Datasets/Simulation Data/lambda.RData")  # M x K
+TruePi <- readRDS("../Datasets/Simulation Data/pi.RData")          # N x K
 
 N <- nrow(TrueY)
 M <- ncol(TrueY)

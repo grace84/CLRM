@@ -20,7 +20,7 @@ getwd()
 
 ###------ Data Read In
 
-test.data = read.csv("../Data/Real Data/global_data_72216obs_38mut.csv", header= T)  
+test.data = read.csv("../Datasets/Real Data/global_data_72216obs_38mut.csv", header= T)  
 str(test.data)
 
 # Data cleaning
